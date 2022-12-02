@@ -27,11 +27,21 @@ body {
     overflow-x: hidden;
 }
 
+a{
+    text-decoration: none;
+}
+
 .header {
     padding: 10px 10px;
     box-shadow: 0 0 2px 0 rgba(114, 144, 144);
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.header a{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -763,6 +773,7 @@ form input::-webkit-input-placeholder {
 }
 
 /* Background svg options  */
+.note-container,
 .input-container {
     background-position-x: right !important;
     background-position-y: bottom !important;

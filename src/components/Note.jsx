@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import DeleteIcon from '@mui/icons-material/Delete';
 import Tooltip from '@mui/material/Tooltip';
 import EditIcon from '@mui/icons-material/Edit';
@@ -101,7 +101,7 @@ function Note({ id, title, content, noteBgClr, noteBgImg, timeStamp, onEdit, onD
 
   // Note Component
   return (
-    <div className={isEditToggled ? 'edit_toggled_container' : `note note-bg-${bgColor} note-bg-img-${bgImage} input-container`}>
+    <div className={isEditToggled ? 'edit_toggled_container' : `note note-bg-${bgColor} note-bg-img-${bgImage} note-container`}>
       {isEditToggled ?
         (
           <>

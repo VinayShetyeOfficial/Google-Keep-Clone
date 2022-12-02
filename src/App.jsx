@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from './components/Header'
 import CreateArea from './components/CreateArea'
 import Note from './components/Note'
@@ -7,8 +7,20 @@ import Footer from './components/Footer'
 import Masonry from 'react-masonry-css'
 import './style.css'
 
+// Get Notes from Local Storage
+function getLocalNotes(){
+  let notes = localStorage.getItem('Notes')
+
+  if(notes){
+    return JSON.parse(notes)
+  }
+  else{
+    return []
+  }
+}
+
 function App() {
-  const [notes, setNotes] = useState([])
+  const [notes, setNotes] = useState(getLocalNotes)
 
   // Add notes
   function addNote(newNote) {
@@ -53,52 +65,56 @@ function App() {
     500: 1
   };
 
+  // Store Notes in Local Storage
+  useEffect(() => {
+    localStorage.setItem('Notes', JSON.stringify(notes))
+  }, [notes])
 
   // Returns all the components to be rendered
   return (
-    <div className='App'>
-      {/* Header  */}
-      <Header />
+        <div className='App'>
+          {/* Header  */}
+          <Header />
 
-      {/* Counter  */}
-      <Count count={notes.legth === 0 ? "Empty" : `Showing ${notes.length} Notes in Database`} />
+          {/* Counter  */}
+          <Count count={notes.legth === 0 ? "Empty" : `Showing ${notes.length} Notes in Database`} />
 
-      {/* Input area [Title, Content] */}
-      <CreateArea onAdd={addNote} />
+          {/* Input area [Title, Content] */}
+          <CreateArea onAdd={addNote} />
 
-      {/* Notes Grid Container  */}
-      <div className='container'>
-        <Masonry
-          breakpointCols={breakpointColumnsObj}
-          className="my-masonry-grid"
-          columnClassName="my-masonry-grid_column"
-        >
+          {/* Notes Grid Container  */}
+          <div className='container'>
+            <Masonry
+              breakpointCols={breakpointColumnsObj}
+              className="my-masonry-grid"
+              columnClassName="my-masonry-grid_column"
+            >
 
-          {/* Individual Notes  */}
-          {
-            notes.map((note, index) => {
-              return (
-                <Note
-                // data
-                  key={index}
-                  id={note.id}
-                  title={note.title}
-                  content={note.content}
-                  noteBgClr={note.bgColor}
-                  noteBgImg={note.bgImage} 
-                  timeStamp={note.timeStamp ? note.timeStamp : null} 
-                  // functions 
-                  onDelete={deleteNote}
-                  onEdit={editNote}
-                />
-              )
-            })
-          }
+              {/* Individual Notes  */}
+              {
+                notes.map((note, index) => {
+                  return (
+                    <Note
+                      // data
+                      key={index}
+                      id={note.id}
+                      title={note.title}
+                      content={note.content}
+                      noteBgClr={note.bgColor}
+                      noteBgImg={note.bgImage}
+                      timeStamp={note.timeStamp ? note.timeStamp : null}
+                      // functions 
+                      onDelete={deleteNote}
+                      onEdit={editNote}
+                    />
+                  )
+                })
+              }
 
-        </Masonry>
-      </div>
-      <Footer />
-    </div>
+            </Masonry>
+          </div>
+          <Footer />
+        </div>
   )
 }
 

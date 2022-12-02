@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import AddIcon from '@mui/icons-material/Add';
 import Tooltip from '@mui/material/Tooltip';
 import TextareaAutosize from 'react-textarea-autosize';
@@ -28,21 +28,26 @@ function CreateArea({ onAdd }) {
         })
     }
 
+    function reset(){
+        setNote({
+            id: null,
+            title: '',
+            content: '',
+            bgColor: 'default',
+            bgImage: 'default',
+        })
+    }
+
     // Passes note data to parent useState hook (in App.jsx)
     function submitButton(event) {
 
-        if (note.title === '' && note.content === '') {
-            console.log()  //: err_msg: empty input fields!
+        if (note.title.trim() === '' && note.content.trim() === '') {
+            console.log('err_msg: empty input fields')  //: err_msg: empty input fields!
+            reset()
         }
         else {
             onAdd(note)
-            setNote({
-                id: null,
-                title: '',
-                content: '',
-                bgColor: 'default',
-                bgImage: 'default',
-            })
+            reset()
         }
 
         event.preventDefault()
