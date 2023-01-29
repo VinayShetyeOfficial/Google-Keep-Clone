@@ -5,7 +5,7 @@
 <p>In addition to replicating the core functionality of Google Keep, this repository also offers the opportunity for further development and customization. It can be a great starting point for anyone looking to create a note-taking application or to learn about building a project using React Js, HTML5, and CSS3. The application is built using the latest technologies and is optimized for speed and performance, giving the users a smooth experience.</p>
 <p> The code is well-organized and easy to follow, which makes it easy for anyone to understand and make changes as per their needs.</p>
 <p>Overall, the GoogleKeepClone repository is a great tool for anyone looking for a robust and customizable note-taking application. It offers all the features of the original Google Keep app, and even more. So, give it a try and see how it can help you stay organized and on top of your tasks. And if you have any suggestions or need support please reach out to me. <br>
-<p> <strong>Application Link:</strong> <a href='https://endearing-haupia-ac9511.netlify.app/'>https://endearing-haupia-ac9511.netlify.app/</a> </p>
+<p> <strong>Application Link:</strong> <a href='https://endearing-haupia-ac9511.netlify.app/' target="_blank">https:/googlekeep-clone.netlify.app/</a> </p>
 <em>🚀Let's make our notes more beautiful and organized together 📝</em></p>
 
 
