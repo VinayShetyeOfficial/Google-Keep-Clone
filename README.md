@@ -14,7 +14,7 @@ This repository is a clone of the popular note-taking application, Google Keep, 
    
 - **Masonry Grid Layout:** The notes are displayed in a visually pleasing and organized Masonry grid layout.
 - **Edit & Delete Notes:** Users have the option to edit and delete their notes as needed.
-- **Custom Backgrounds:** Add solid color or SVG backgrounds to personalize your notes.
+- **Custom Backgrounds:** Add solid color or SVG backgrounds to personalize your notes. 
 - **Responsive Design:** The application is responsive, offering a user experience similar to Google Keep.
 
 ## Personalization
