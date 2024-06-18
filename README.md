@@ -16,7 +16,7 @@ This repository is a clone of the popular note-taking application, Google Keep, 
 - **Edit & Delete Notes:** Users have the option to edit and delete their notes as needed.
 - **Custom Backgrounds:** Add solid color or SVG backgrounds to personalize your notes. 
 - **Responsive Design:** The application is responsive, offering a user experience similar to Google Keep.
-
+ 
 ## Personalization
 
 Users can organize their notes with ease, thanks to the option of adding solid color and SVG backgrounds. This feature is especially useful for differentiating between numerous notes.
