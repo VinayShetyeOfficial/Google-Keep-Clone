@@ -1,32 +1,26 @@
 # Google Keep Clone 📝 
-    
+
 ![Google-Keep-Clone](https://github.com/VinayShetyeOfficial/Google-Keep-Clone/assets/100470361/856feb0a-fe31-4de2-8976-808d64a731df)  
    
 ### Links        
-     
 Live Site URL: [Preview](https://endearing-haupia-ac9511.netlify.app/) 
   
 ## Description    
 This repository is a clone of the popular note-taking application, Google Keep, developed using React Js, HTML5, and CSS3. The project aims to replicate the functionality of the original application while also providing additional features and customization options.
 
- 
-## Features      
-      
+## Features    
 - **Masonry Grid Layout:** The notes are displayed in a visually pleasing and organized Masonry grid layout.
 - **Edit & Delete Notes:** Users have the option to edit and delete their notes as needed.
 - **Custom Backgrounds:** Add solid color or SVG backgrounds to personalize your notes. 
 - **Responsive Design:** The application is responsive, offering a user experience similar to Google Keep.
  
 ## Personalization
-
 Users can organize their notes with ease, thanks to the option of adding solid color and SVG backgrounds. This feature is especially useful for differentiating between numerous notes.
 
 ## Development Opportunities
-
 The well-organized and easy-to-follow code makes this repository a great starting point for anyone looking to create a note-taking application or learn React Js, HTML5, and CSS3. It's optimized for speed and performance.
 
 ## Support 
-
 For suggestions or support, feel free to reach out!
 
 > [!NOTE]
