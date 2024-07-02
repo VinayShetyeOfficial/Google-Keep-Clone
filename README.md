@@ -16,7 +16,7 @@ This repository is a clone of the popular note-taking application, Google Keep, 
  
 ## Personalization
 Users can organize their notes with ease, thanks to the option of adding solid color and SVG backgrounds. This feature is especially useful for differentiating between numerous notes.
-
+ 
 ## Development Opportunities
 The well-organized and easy-to-follow code makes this repository a great starting point for anyone looking to create a note-taking application or learn React Js, HTML5, and CSS3. It's optimized for speed and performance.
 
