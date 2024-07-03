@@ -6,7 +6,7 @@
 Live Site URL: [Preview](https://endearing-haupia-ac9511.netlify.app/)  
     
 ## Description    
-This repository is a clone of the popular note-taking application, Google Keep, developed using React Js, HTML5, and CSS3. The project aims to replicate the functionality of the original application while also providing additional features and customization options.
+This repository is a clone of the popular note-taking application, Google Keep, developed using React Js, HTML5, and CSS3. The project aims  to replicate the functionality of the original application while also providing additional features and customization options.
 
 ## Features     
 - **Masonry Grid Layout:** The notes are displayed in a visually pleasing and organized Masonry grid layout.
